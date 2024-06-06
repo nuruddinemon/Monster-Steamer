@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonsterSteamer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="lib/swiper-11.1.4/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Menu Area -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light container-md px-0 my-3">
+        <div class="container-fluid gap-md-5 gap-1 justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img
+              src="Images/Logo-Dark.png"
+              class="img-fluid"
+              alt=""
+              width="199"
+              height="46"
+            />
+          </a>
+          <div class="cta_btn d-lg-none d-block">
+            <a href="#" class="btn btn-primary"> Book Online </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center dropdown-menu-start"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div
+                  class="dropdown-menu p-sm-3 p-1 mt-sm-4"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <ul class="nav flex-column gap-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Carpet Cleaning</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Upholstery Cleaning</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tile and Grout Cleaning</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Commercial Cleaning</a>
+                    </li>
+                  </ul>
+                  <ul class="nav flex-column gap-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Air Duct Cleaning</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Water Damage</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pressure Washing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dryer Vent Cleaning</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <div
+                  class="dropdown-menu p-sm-3 p-1 mt-sm-4"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <ul class="nav flex-column gap-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Carpet Cleaning</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Upholstery Cleaning</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tile and Grout Cleaning</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Commercial Cleaning</a>
+                    </li>
+                  </ul>
+                  <ul class="nav flex-column gap-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Air Duct Cleaning</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Water Damage</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pressure Washing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dryer Vent Cleaning</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Subscription</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cta_btn d-lg-block d-none">
+            <a href="#" class="btn btn-primary"> Book Online </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Group of hero and feature  -->
+    <section id="heroToFeature">
+      <!-- Hero Area -->
+      <section id="hero">
+        <div class="container">
+          <h1
+            class="d-flex flex-column justify-content-center align-items-start gap-4"
+          >
+            <img
+              src="Images/Hero/glowing-small.svg"
+              class="img-fluid glow_small"
+              alt=""
+            />
+            <div class="d-flex gap-lg-2 align-content-lg-center flex-lg-row flex-column">
+              <div class="video">
+                <img
+                  src="Images/Hero/Video.gif"
+                  class="img-fluid scrolling"
+                  alt=""
+                />
+              </div>
+              <span class="blue mt-3">Carpet</span>
+            </div>
+            <img src="Images/Hero/glowing.svg" class="img-fluid glow" alt="" />
+            <div class="d-flex flex-lg-row gap-3 flex-column flex-wrap">
+              <span class="blue">Cleaning</span>
+              <span class="dark">in SAN</span>
+            </div>
+            <span class="dark">Diego.</span>
+            <img src="Images/Hero/glowing.svg" class="img-fluid glow" alt="" />
+          </h1>
+
+          <div class="d-flex flex-lg-row flex-column justify-content-between align-items-center gap-lg-0 gap-5 mt-lg-0 mt-5 mb-lg-0 mb-5">
+            <p>
+              Elevate your living environment to new heights of cleanliness and
+              hygiene. We serve both <span>residential</span> and
+              <span>commercial</span> clients.
+            </p>
+            <a href="" class="position-relative cta_btn">
+              <img src="Images/Hero/call us today.svg" class="rotate" alt="" />
+              <div class="call_icon position-absolute">
+                <img src="Images/Hero/call icon.svg" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- feature area -->
+      <section id="feature">
+        <div class="container pb-5">
+          <div
+            class="d-flex justify-content-between align-items-center flex-lg-row flex-column flex-column-reverse gap-lg-0 gap-5"
+          >
+            <div class="d-flex flex-column gap-4">
+              <div class="d-flex gap-5 flex-lg-row flex-column">
+                <div class="card">
+                  <span>since</span>
+                  <h2>2010</h2>
+                  <p>Providing the same level of quality service</p>
+                </div>
+                <div class="card">
+                  <span>Operate</span>
+                  <h2>3</h2>
+                  <p>Trucks for fast & reliable cleaning service</p>
+                </div>
+              </div>
+              <div class="d-flex gap-5 flex-lg-row flex-column">
+                <div class="card">
+                  <span>Over</span>
+                  <h2>8000+</h2>
+                  <p>Home & Businesses trust us for cleaning services</p>
+                </div>
+                <div class="card">
+                  <span>4.9 star,</span>
+                  <h2>1200+</h2>
+                  <p>Homeowners reviewed us on internet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="position-relative">
+              <img
+                src="Images/Bubble.png"
+                class="img-fluid position-absolute icon d-lg-block d-none"
+                alt=""
+              />
+              <img src="Images/Hero/Video.gif" class="img-fluid gif" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- quality services -->
+    <section id="quality_services">
+      <div class="container">
+        <div
+          class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-between mb-3 gap-md-0 gap-5"
+        >
+          <h2>Quality Services</h2>
+          <div>
+            <p>
+              Monster Steamer is the most trusted and professional cleaning
+              service provider in the San Diego area.
+            </p>
+            <div
+              class="d-flex gap-4 align-items-center justify-content-lg-start justify-content-center"
+            >
+              <a
+                href="#"
+                class="text-decoration-none d-flex align-items-start gap-sm-2"
+              >
+                <span>See Our Pricing </span>
+                <img
+                  src="Images/Quality Service/upper top arrow.svg"
+                  class="img-fluid"
+                  alt=""
+              /></a>
+
+              <a
+                href="#"
+                class="text-decoration-none d-flex align-items-start gap-sm-2"
+                ><span>Call Us (619) 201-9480 </span>
+                <img
+                  src="Images/Quality Service/upper top arrow.svg"
+                  class="img-fluid"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slider row align-items-end flex-column-reverse justify-content-between gap-lg-0 gap-5"
+        >
+          <!-- navigation buttons -->
+          <div class="navigation col-lg-2 d-flex justify-content-center">
+            <ul class="nav gap-3">
+              <button class="nav-item prev">
+                <img
+                  src="Images/Quality Service/right-arrow.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </button>
+              <button class="nav-item next">
+                <img
+                  src="Images/Quality Service/right-arrow.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </button>
+            </ul>
+          </div>
+
+          <!-- Slides -->
+          <div
+            class="slider_content overflow-hidden d-flex col-lg-10 pe-0 ps-lg-0 ps-4 gap-3"
+          >
+            <div>
+              <img
+                src="Images/Quality Service/Carpet Cleaning Service.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <h3>Carpet Cleaning</h3>
+              <p>Say Goodbye To Stains & Odors</p>
+            </div>
+            <div>
+              <img
+                src="Images/Quality Service/Upholstery Cleaning Service.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <h3>Carpet Cleaning</h3>
+              <p>Say Goodbye To Stains & Odors</p>
+            </div>
+            <div>
+              <img
+                src="Images/Quality Service/Tile & Grout Cleaning Service.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <h3>Carpet Cleaning</h3>
+              <p>Say Goodbye To Stains & Odors</p>
+            </div>
+            <div>
+              <img
+                src="Images/Quality Service/Pet Odor Removal.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <h3>Carpet Cleaning</h3>
+              <p>Say Goodbye To Stains & Odors</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why area -->
+    <section id="why">
+      <div class="container pb-md-0 pb-5">
+        <div
+          class="row align-items-lg-end my-5 py-5 flex-lg-row flex-column gap-lg-0 gap-5"
+        >
+          <div class="col-xl-6 col-lg-5 text-lg-start text-center">
+            <h2>
+              Why <br />
+              choose us?
+            </h2>
+            <p>
+              Our reputation has been built by word-of-mouth referrals since the
+              very beginning in 2010, and we're committed to providing the same
+              level of quality service to you.
+            </p>
+            <p>
+              We have also developed our own green and eco-friendly product line
+              under the name <span>Monsterchems</span>.
+            </p>
+            <button class="btn btn-primary mt-4">Book Now - 10% Off</button>
+          </div>
+          <div class="col-xl-6 col-lg-7">
+            <div class="why_card">
+              <img src="Images/Fast-icon.png" alt="" class="img-fluid" />
+              <p>Fast And Reliable Team</p>
+            </div>
+            <div class="why_card">
+              <img src="Images/Customer-icon.png" alt="" class="img-fluid" />
+              <p>Customer Satisfaction</p>
+            </div>
+            <div class="why_card">
+              <img src="Images/No Bait-icon.png" alt="" class="img-fluid" />
+              <p>No Bait And Switch</p>
+            </div>
+            <div class="why_card">
+              <img src="Images/Insured-icon.png" alt="" class="img-fluid" />
+              <p>Insured Cleaning Company</p>
+            </div>
+            <div class="why_card">
+              <img src="Images/Attention-Icon.png" alt="" class="img-fluid" />
+              <p>Attention To Detail</p>
+            </div>
+            <div class="why_card">
+              <img
+                src="Images/Eco-friendly-icon.png"
+                alt=""
+                class="img-fluid"
+              />
+              <p>Eco-Friendly Products</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video area -->
+    <section id="video">
+      <div class="container position-relative my-5 pb-md-0 pb-5">
+        <video poster="Images/video_poster.png">
+          <source src="Images/cleaning.mp4" type="video/mp4" />
+        </video>
+        <button>
+          <img src="Images/play-icon.png" class="img-fluid" alt="" />
+        </button>
+      </div>
+    </section>
+    <!-- Feedback area -->
+    <section id="feedback">
+      <div class="container">
+        <h2 class="text-center">Clients Feedback</h2>
+        <p class="text-center py-md-0 py-4">
+          We have <span>1200+ reviews</span> from Yelp and Google with a
+          combined result of 4.9 star rating, welcome to read our clients'
+          feedback.
+        </p>
+        <div
+          class="d-flex gap-4 align-items-center justify-content-center mb-4"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-flex align-items-start gap-sm-2"
+          >
+            <span>See All Google Reviews</span>
+            <img src="Images/Quality Service/upper top arrow.svg" alt=""
+          /></a>
+
+          <a
+            href="#"
+            class="text-decoration-none d-flex align-items-start gap-sm-2"
+            ><span>See All Yelp Reviews</span>
+            <img src="Images/Quality Service/upper top arrow.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="swiper swiperFeedBack mt-5">
+          <div
+            class="swiper-wrapper slider gap-md-4 justify-content-center align-items-center"
+          >
+            <!-- Slides -->
+            <div class="swiper-slide slider_content p-xl-4 p-3">
+              <p>
+                I had a great experience with this company. Now my sofa and
+                armchair look like new. Very pleased with the results.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="name">Jared B.</p>
+                <div>
+                  <img src="Images/Reviews/yelp logo.svg" alt="" />
+                  <img src="Images/Reviews/5 Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slider_content p-xl-4 p-3">
+              <p>
+                David was an amazing tech when I moved into my new place! Can't
+                wait to schedule my next appointment.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="name">Lesly Q.</p>
+                <div>
+                  <img src="Images/Reviews/Google logo.svg" alt="" />
+                  <img src="Images/Reviews/5 Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slider_content p-xl-4 p-3">
+              <p>
+                The carpet is not only clean, but the stains are gone. They did
+                a wonderful job. I recommend them to everyone.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="name">Tom K.</p>
+                <div>
+                  <img src="Images/Reviews/Google logo.svg" alt="" />
+                  <img src="Images/Reviews/5 Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slider_content p-xl-4 p-3">
+              <p>
+                I had a great experience with this company. Now my sofa and
+                armchair look like new. Very pleased with the results.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="name">Jared B.</p>
+                <div>
+                  <img src="Images/Reviews/yelp logo.svg" alt="" />
+                  <img src="Images/Reviews/5 Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slider_content p-xl-4 p-3">
+              <p>
+                David was an amazing tech when I moved into my new place! Can't
+                wait to schedule my next appointment.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="name">Lesly Q.</p>
+                <div>
+                  <img src="Images/Reviews/Google logo.svg" alt="" />
+                  <img src="Images/Reviews/5 Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- navigation buttons -->
+          <div
+            class="slider_nav d-flex gap-4 justify-content-center align-items-center mt-5"
+          >
+            <button class="swiper-prev">
+              <img
+                src="Images/Quality Service/right-arrow.svg"
+                id="prev"
+                alt=""
+              />
+            </button>
+            <button class="swiper-next">
+              <img
+                src="Images/Quality Service/right-arrow.svg"
+                id="next"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Before & After area -->
+    <section id="before_after" class="px-sm-0 px-3">
+      <div class="container">
+        <h2 class="text-center">Before & After</h2>
+        <div
+          class="d-flex gap-4 align-items-center justify-content-center my-md-5 my-3"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-flex align-items-start gap-sm-2"
+          >
+            <span>Our Services</span>
+            <img src="Images/Quality Service/upper top arrow.svg" alt="" />
+          </a>
+
+          <a
+            href="#"
+            class="text-decoration-none d-flex align-items-start gap-sm-2"
+          >
+            <span>Call Us (619) 201-9480</span>
+            <img src="Images/Quality Service/upper top arrow.svg" alt="" />
+          </a>
+        </div>
+        <div class="swiper swiperBAF slider my-md-5 py-md-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex-lg-row flex-column gap-4 my-5 py-5">
+              <div class="col position-relative">
+                <img
+                  src="Images/Before&After/Before1.png"
+                  class="img-fluid position-absolute"
+                  alt=""
+                />
+                <p class="before">before</p>
+                <div class="line"></div>
+                <img
+                  src="Images/Before&After/After1.jpg"
+                  class="img-fluid after_img"
+                  alt=""
+                />
+                <p class="after">after</p>
+              </div>
+              <div class="col position-relative d-lg-block d-none">
+                <img
+                  src="Images/Before&After/Before2.png"
+                  class="img-fluid position-absolute"
+                  alt=""
+                />
+                <p class="before">before</p>
+                <div class="line"></div>
+                <img
+                  src="Images/Before&After/After2.jpg"
+                  class="img-fluid after_img"
+                  alt=""
+                />
+                <p class="after">after</p>
+              </div>
+            </div>
+            <div class="swiper-slide flex-lg-row flex-column gap-4 my-5 py-5">
+              <div class="col position-relative d-lg-block d-none">
+                <img
+                  src="Images/Before&After/Before1.png"
+                  class="img-fluid position-absolute"
+                  alt=""
+                />
+                <p class="before">before</p>
+                <div class="line"></div>
+                <img
+                  src="Images/Before&After/After1.jpg"
+                  class="img-fluid after_img"
+                  alt=""
+                />
+                <p class="after">after</p>
+              </div>
+              <div class="col position-relative">
+                <img
+                  src="Images/Before&After/Before2.png"
+                  class="img-fluid position-absolute"
+                  alt=""
+                />
+                <p class="before">before</p>
+                <div class="line"></div>
+                <img
+                  src="Images/Before&After/After2.jpg"
+                  class="img-fluid after_img"
+                  alt=""
+                />
+                <p class="after">after</p>
+              </div>
+            </div>
+            <div class="swiper-slide flex-lg-row flex-column gap-4 my-5 py-5">
+              <div class="col position-relative">
+                <img
+                  src="Images/Before&After/Before1.png"
+                  class="img-fluid position-absolute"
+                  alt=""
+                />
+                <p class="before">before</p>
+                <div class="line"></div>
+                <img
+                  src="Images/Before&After/After1.jpg"
+                  class="img-fluid after_img"
+                  alt=""
+                />
+                <p class="after">after</p>
+              </div>
+              <div class="col position-relative d-lg-block d-none">
+                <img
+                  src="Images/Before&After/Before2.png"
+                  class="img-fluid position-absolute"
+                  alt=""
+                />
+                <p class="before">before</p>
+                <div class="line"></div>
+                <img
+                  src="Images/Before&After/After2.jpg"
+                  class="img-fluid after_img"
+                  alt=""
+                />
+                <p class="after">after</p>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="swiper-pagination d-lg-flex d-none justify-content-center gap-5"
+          ></div>
+          <!-- navigation buttons -->
+          <div
+            class="slider_nav d-flex gap-4 justify-content-center align-items-center mt-5 d-lg-none"
+          >
+            <button class="swiper-prev">
+              <img
+                src="Images/Quality Service/right-arrow.svg"
+                id="prev"
+                alt=""
+              />
+            </button>
+            <button class="swiper-next">
+              <img
+                src="Images/Quality Service/right-arrow.svg"
+                id="next"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 10% off area -->
+    <section id="ten_percent_off">
+      <div class="container my-5 py-md-0 py-5">
+        <div class="row position-relative justify-content-end">
+          <div class="col-lg-8 position-absolute">
+            <h2>Book Online And get 10% Off.</h2>
+            <button class="btn btn-primary">Book Us Today</button>
+          </div>
+          <div class="col-lg-10">
+            <img src="Images/van.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- We serve area -->
+    <section id="serve_area">
+      <div class="container-lg inner_serve pt-md-0 pt-5">
+        <h2>Area We Serve</h2>
+        <div class="d-lg-grid d-flex justify-content-center gap-3 flex-wrap">
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>San Diego</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Oceanside</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Escondido</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Del Mar</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Miramar</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Rancho Bernardo</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Carlsbad</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>El Cajon</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Fallbrook</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Miramesa</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>National City</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Vista</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Bonsall</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Encinitas</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>La Jolla</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Ramona</span>
+          </h3>
+          <h3 class="px-4 py-2">
+            <img src="Images/pin_drop.svg" alt="" />
+            <span>Chula Vista</span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- footer area -->
+    <footer>
+      <div class="container">
+        <div
+          class="d-flex justify-content-between align-items-center flex-lg-row flex-column gap-lg-0 gap-5"
+        >
+          <a class="" href="#">
+            <img
+              src="Images/Logo-Dark.png"
+              class="img-fluid"
+              alt=""
+              width="199"
+              height="46"
+            />
+          </a>
+          <ul class="nav align-items-center flex-lg-row flex-column gap-4">
+            <li class="nav-item">
+              <span class="icon">
+                <img src="Images/Footer/Call-icon.svg" alt="" />
+              </span>
+              <span class="text">(619) 201-9480</span>
+            </li>
+            <li class="nav-item">
+              <span class="icon">
+                <img src="Images/Footer/Mail-icon.svg" alt=""
+              /></span>
+              <span class="text">info@monstersteamer.net</span>
+            </li>
+            <li class="nav-item">
+              <span class="icon"
+                ><img src="Images/Footer/Location-icon.svg" alt=""
+              /></span>
+              <span class="text">San Diego, CA.</span>
+            </li>
+          </ul>
+          <ul class="nav social gap-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img src="Images/Footer/facebook-icon.svg" alt="" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img src="Images/Footer/insta-icon.svg" alt="" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#header" class="nav-link">
+                <img src="Images/Footer/top-icon.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="row justify-content-center mt-5 flex-lg-row flex-column gap-lg-0 gap-5"
+        >
+          <div class="col ps-4">
+            <h3>About</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link">Area We Serve</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Subscription</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav-link">Career</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Deals</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col ps-4">
+            <h3>Services</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link">Carpet Cleaning</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Upholstery Cleaning</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Tile & Grout Cleaning</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Commercial Cleaning</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Water Damage</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Air Duct Cleaning</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Pressure Washing</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Dryer Vent Cleaning</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col ps-4">
+            <h3>Quick Links</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link">Book Online</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Google Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Yelp Reviewsg</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Review Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Privacy Policy </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col ps-4 text-lg-start text-center">
+            <a href="">
+              <img
+                src="Images/Footer/Homeadvisor approved.png"
+                alt=""
+                class="img-fluid mb-5"
+                width="105"
+                height="96"
+              />
+            </a>
+            <p>We Accept All Major Credit Cards</p>
+            <div
+              class="d-flex gap-2 justify-content-lg-start justify-content-center"
+            >
+              <img
+                src="Images/Footer/visa-dark logo.svg"
+                alt=""
+                class="img-fluid"
+              />
+              <img
+                src="Images/Footer/mastercard-dark logo.svg"
+                alt=""
+                class="img-fluid"
+              />
+              <img
+                src="Images/Footer/discover logo.svg"
+                alt=""
+                class="img-fluid"
+              />
+              <img
+                src="Images/Footer/American express.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="review mx-lg-0 mx-auto">
+              <img src="Images/Reviews/5 Star.svg" class="img-fluid" alt="" />
+              <p>1200+ Yelp & Google reviews</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-md-row flex-column justify-content-md-between align-items-lg-start align-items-center cpy_right pb-4 pt-5"
+        >
+          <p>© 2024 Monster Steamer Carpet Cleaning.</p>
+          <p>
+            Built by
+            <a href="#" class="text-decoration-none"
+              >Jeremy Ellsworth Designs LLC</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- gsap animation -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- swiper slider -->
+    <script src="lib/swiper-11.1.4/swiper-bundle.min.js"></script>
+    <!-- app js -->
+    <script src="app.js"></script>
+  </body>
+</html>
